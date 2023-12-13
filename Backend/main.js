@@ -22,7 +22,7 @@ app.use(expressError);
 
 const start=async()=>{
     try {
-        await connectDb() 
+        await connectDb(process.env.URI) 
         app.listen(port,()=>{
             console.log(`Listening on port ${port}`)
         })
