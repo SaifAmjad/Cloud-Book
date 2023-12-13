@@ -1,7 +1,6 @@
 const Mongoose = require("mongoose");
 
-const uri="mongodb+srv://saif03:iamsaif03@my-project.qblybzj.mongodb.net/TaskManager?retryWrites=true&w=majority"
-const connectDb = () => {
+const connectDb = (uri) => {
   Mongoose.connect(uri)
     .then(() => {
       console.log("Connected to Db");
