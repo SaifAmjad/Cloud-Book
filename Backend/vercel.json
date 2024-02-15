@@ -7,7 +7,7 @@
         }
     ],
     "rewrites": [
-        { "source": "/(.*)", "destination": "main.js" }
+        { "source": "/(.*)", "dest": "main.js" }
     ],
     "headers": [
         {
